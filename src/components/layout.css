@@ -26,6 +26,7 @@ body {
   line-height: 1.4;
   font-size: 1rem;
 }
+
 h1,
 h2,
 h3,
@@ -36,12 +37,15 @@ h6 {
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
+
 p {
   margin-bottom: 1.25rem;
 }
+
 a {
   text-decoration: none;
 }
+
 .defaultHero {
   min-height: calc(100vh - 62px);
   background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
@@ -50,6 +54,7 @@ a {
   justify-content: center;
   align-items: center;
 }
+
 .btn-white,
 .btn-primary {
   text-transform: uppercase;
@@ -61,19 +66,23 @@ a {
   transition: var(--mainTransition);
   cursor: pointer;
 }
+
 .btn-white:hover {
   background: var(--mainWhite);
   color: var(--primaryColor);
 }
+
 .btn-primary {
   background: var(--primaryColor);
   color: var(--mainWhite);
   border: 2px solid var(--primaryColor);
 }
+
 .btn-primary:hover {
   background: transparent;
   color: var(--primaryColor);
 }
+
 /* .gatsby-image-wrapper {
   max-height: 600px;
   box-shadow: var(--lightShadow);
