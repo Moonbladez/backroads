@@ -14,6 +14,7 @@ const getFeaturedTours = graphql`
           price
           country
           contentful_id
+          slug
           days
           images {
             fluid {
