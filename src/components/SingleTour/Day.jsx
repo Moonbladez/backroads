@@ -9,8 +9,6 @@ const Day = ({ day, info }) => {
     setInfo(showInfo => !showInfo)
   }
 
-  console.log(info)
-
   return (
     <article className={styles.day}>
       <h4>

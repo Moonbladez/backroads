@@ -8,12 +8,17 @@ module.exports = {
     title: "Backroads",
     description: "Explore awesome tours",
     author: "@Buludesigns",
+    twitterUsername: "@jegheterbekki",
+    image: "/defaultBcg.jpeg",
+    url: "https://backroads-explorer.netlify.com"
   },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-react-helmet`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
