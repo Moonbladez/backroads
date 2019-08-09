@@ -24,17 +24,17 @@ const SEO = ({ title, description }) => {
       <meta name="description" content={description || siteDesc} />
       <meta name="image" content={image} />
       {/* twitter card */}
-      <meta name="twitter:card" content="summary_large_image"></meta>
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`${url} ${image}`} />
+      <meta name="twitter:image" content={`${Url}${image}`} />
       {/* facebook card */}
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={Url} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={siteTitle} />
       <meta property="og:description" content={siteDesc} />
-      <meta property="og:image" content={`${url} ${image}`} />
+      <meta property="og:image" content={`${Url}${image}`} />
       <meta property="og:image:width" content="400" />
       <meta property="og:image:height" content="300" />
     </Helmet>

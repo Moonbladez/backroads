@@ -9,7 +9,7 @@ module.exports = {
     description: "Explore awesome tours",
     author: "@Buludesigns",
     twitterUsername: "@jegheterbekki",
-    image: "/puppy.jpeg",
+    image: "/puppy.jpg",
     url: "https://backroads-explorer.netlify.com"
   },
   plugins: [
