@@ -10,7 +10,7 @@ module.exports = {
     author: "@Buludesigns",
     twitterUsername: "@jegheterbekki",
     image: "/puppy.jpg",
-    url: "https://backroads-explorer.netlify.com"
+    siteUrl: "https://backroads-explorer.netlify.com"
   },
   plugins: [
     `gatsby-plugin-styled-components`,
