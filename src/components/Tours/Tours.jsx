@@ -3,7 +3,6 @@ import TourList from "./TourList"
 import { useStaticQuery, graphql } from "gatsby"
 
 const getTours = graphql`
-  {
     tours: allContentfulTour {
       edges {
         node {
@@ -20,7 +19,6 @@ const getTours = graphql`
         }
       }
     }
-  }
 `
 
 const Tours = () => {
