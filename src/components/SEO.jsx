@@ -9,7 +9,7 @@ const getData = graphql`
         siteTitle: title
         siteDesc: description
         author
-        url
+        siteUrl
         twitterUsername
       }
     }
@@ -18,7 +18,14 @@ const getData = graphql`
 
 const SEO = ({ title, description }) => {
   const { site } = useStaticQuery(getData)
-  const { siteDesc, siteTitle, url, image, twitterUsername } = site.siteMetadata
+  const {
+    siteDesc,
+    siteTitle,
+    siteUrl,
+    image,
+    twitterUsername,
+  } = site.siteMetadata
+
   return (
     <Helmet title={`${title}| ${siteTitle}`} htmlAttributes={{ lang: "en" }}>
       <meta name="description" content={description || siteDesc} />
@@ -28,9 +35,9 @@ const SEO = ({ title, description }) => {
       <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`${url}${image}`} />
+      <meta name="twitter:image" content={`${siteUrl}${image}`} />
       {/* facebook card */}
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={siteUrl} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={siteTitle} />
       <meta property="og:description" content={siteDesc} />
