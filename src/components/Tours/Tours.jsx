@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Tourlist from "./Tourlist"
+import Tourlist from "./TourList"
 const Tours = () => {
   const { tours } = useStaticQuery(graphql`
     {
