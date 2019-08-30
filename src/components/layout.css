@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
 
 :root {
-  --primaryColor: #3fd0d4;
+  --primaryColor: #17828F;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
   --mainGrey: #ececec;
-  --darkGrey: #afafaf;
+  --darkGrey: #847271;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 4px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
@@ -49,7 +49,7 @@ a {
 
 .defaultHero {
   min-height: calc(100vh - 62px);
-  background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(23, 130, 143, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/defaultBcg.jpeg") center/cover no-repeat;
   display: flex;
   justify-content: center;

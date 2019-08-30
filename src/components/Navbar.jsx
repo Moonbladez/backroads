@@ -17,7 +17,13 @@ const Navbar = () => {
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
           <img src={logo} alt="Backroad Logo" />
-          <button type="button" className={styles.logoBtn} onClick={toggleNav}>
+          <button
+            type="button"
+            className={styles.logoBtn}
+            onClick={toggleNav}
+            role="button"
+            aria-label="navigation toggle"
+          >
             <FaAlignRight className={styles.logoIcon}></FaAlignRight>
           </button>
         </div>
@@ -41,7 +47,12 @@ const Navbar = () => {
         <div className={styles.navSocialLinks}>
           {socialIcons.map((item, index) => {
             return (
-              <a key={index} href="item.url" target="_blank">
+              <a
+                key={index}
+                href={item.url}
+                target="_blank"
+                aria-label={item.ariaLabel}
+              >
                 {item.icon}
               </a>
             )

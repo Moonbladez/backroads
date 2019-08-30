@@ -13,6 +13,7 @@ const Contact = () => {
           className={styles.form}
         >
           <div>
+            <label htmlFor="name">Name:</label>
             <input
               type="text"
               name="name"
@@ -22,6 +23,7 @@ const Contact = () => {
             />
           </div>
           <div>
+            <label htmlFor="email">Email:</label>
             <input
               type="email"
               name="email"
@@ -31,6 +33,7 @@ const Contact = () => {
             />
           </div>
           <div>
+            <label htmlFor="message">Your message:</label>
             <textarea
               name="message"
               id="message"

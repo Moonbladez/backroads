@@ -22,6 +22,7 @@ const Footer = () => {
             <a
               key={index}
               href={item.url}
+              aria-label={item.ariaLabel}
               target="_blank"
               rel="noopener noreferrer"
             >

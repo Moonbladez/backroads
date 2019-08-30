@@ -19,7 +19,11 @@ const Blog = ({ data }) => {
         return (
           <div className="rich">
             <h3>this is an awesome image</h3>
-            <img width="400" src={node.data.target.fields.file["en-US"].url} />
+            <img
+              width="400"
+              src={node.data.target.fields.file["en-US"].url}
+              alt="tour image"
+            />
             <p>images provided by john doe</p>
           </div>
         )
